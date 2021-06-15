@@ -5,6 +5,7 @@
   "author": "Faculdade Senai Joinville",
   "license": "MIT",
   "scripts": {
+    "publish": "npm publish",
     "build": "tsc --p ./"
   },
   "devDependencies": {

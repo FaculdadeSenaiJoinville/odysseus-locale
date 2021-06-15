@@ -1,6 +1,6 @@
 import { Locale } from "../Locale";
 
-export default class Users extends Locale {
+export class Users extends Locale {
 
     constructor() {
 

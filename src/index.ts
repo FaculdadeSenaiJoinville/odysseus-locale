@@ -1,7 +1,5 @@
-import Users from "./translations/users";
-
-const users = new Users();
+import { Users } from "./translations/Users";
 
 export const locale = {
-    users,
+    users: new Users()
 };
