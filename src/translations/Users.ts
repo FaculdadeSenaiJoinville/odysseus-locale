@@ -18,7 +18,9 @@ export class Users extends Locale {
 		this.messages = {
 			hello_world: 'Olá Mundo',
 
-			greeting_user: 'Olá {{user_name}}! Como vai?'
+			greeting_user: 'Olá {{user_name}}! Como vai?',
+
+			greeting_two_users: 'Olá {{first_user_name}} e {{second_user_name}}! Como vão?'
 		};
 	}
 }
