@@ -1,20 +1,24 @@
-import { Locale } from "../Locale";
+import { Locale } from "../core/Locale";
 
 export class Users extends Locale {
 
-    constructor() {
+	constructor() {
 
-        super();
-        this.name = 'Usuários';
-    
-        this.fields = {
-            ...this.base_fields,
+		super();
+		this.name = 'Usuários';
 
-            email: 'E-mail',
+		this.fields = {
+			email: 'E-mail',
 
-            password: 'Senha',
+			password: 'Senha',
 
-            active: 'Ativo'
-        };
-    }
+			active: 'Ativo'
+		};
+
+		this.messages = {
+			hello_world: 'Olá Mundo',
+
+			greeting_user: 'Olá {{user_name}}! Como vai?'
+		};
+	}
 }
