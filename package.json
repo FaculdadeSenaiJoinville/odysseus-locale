@@ -1,7 +1,8 @@
 {
-  "name": "odys",
+  "name": "senai-odyssey-locale",
   "version": "1.0.0",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Faculdade Senai Joinville",
   "license": "MIT",
   "scripts": {
