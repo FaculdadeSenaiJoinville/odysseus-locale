@@ -7,6 +7,8 @@ export class Locale {
 
 			name: 'Nome',
 
+			active: 'Ativo',
+
 			created_by: 'Criado por',
 
 			created_at: 'Criado em',
@@ -14,6 +16,16 @@ export class Locale {
 			updated_by: 'Atualizado por',
 
 			updated_at: 'Atualizado em'
+		};
+
+		this.base_messages = {
+			internal_server_error: 'Ocorreu um erro interno!',
+
+			invalid_type: 'O valor para o campo "{{field}}" deve ser do tipo "{{type}}"',
+
+			required_field: 'Campo "{{field}}" é obrigatório.',
+
+			characters_min: 'O campo "{{field}}" deve ter no mínimo {{value}} caracteres.'
 		};
 	}
 
@@ -23,14 +35,16 @@ export class Locale {
 
 	protected fields: Object;
 
+	protected base_messages: Object;
+
 	protected messages: Object;
 
-	public table() {
+	public getName() {
 
 		return this.name;
 	};
 
-	public field(field_name: string) {
+	public getField(field_name: string) {
 
 		const fields = {
 			...this.base_fields,
@@ -42,16 +56,21 @@ export class Locale {
 			: `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o campo "${field_name}".`;
 	};
 
-	public message(message_name: string, config?: Object) {
+	public getMessage(message_name: string, config?: Object) {
 
-		if (!this.messages[message_name]) {
+		const messages = {
+			...this.base_messages,
+			...this.messages
+		};
+
+		if (!messages[message_name]) {
 
 			return `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a mensagem "${message_name}".`;
 		}
 
 		if (config) {
 
-			let message = this.messages[message_name];
+			let message = messages[message_name];
 
 			for (const property of Object.keys(config)) {
 
@@ -66,6 +85,6 @@ export class Locale {
 			return message;
 		}
 
-		return this.messages[message_name];
+		return messages[message_name];
 	}
 }
