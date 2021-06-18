@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --p ./",
-    "dev": "ts-node src",
-    "publish": "npm publish"
+    "dev": "ts-node src"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
