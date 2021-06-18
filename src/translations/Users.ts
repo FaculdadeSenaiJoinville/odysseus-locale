@@ -5,6 +5,7 @@ export class Users extends Locale {
 	constructor() {
 
 		super();
+
 		this.name = 'Usuários';
 
 		this.fields = {
@@ -13,6 +14,12 @@ export class Users extends Locale {
 			password: 'Senha',
 
 			active: 'Ativo'
+		};
+
+		this.messages = {
+			invalid_email: 'E-mail inválido.',
+
+    		invalid_password: 'Senha inválida.'
 		};
 	}
 }
