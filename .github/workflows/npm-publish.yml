@@ -16,21 +16,11 @@ jobs:
         with:
           node-version: 12.18.2
           registry-url: https://registry.npmjs.org/
-    
-      - name: Install Yarn
-        run: npm install -g yarn
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Build Package
-        run: yarn build
-
-      - name: Publish Package
-        run: yarn publish
+      - run: npm install -g yarn
+      - run: yarn install
+      - run: yarn build
+      - run: npm ci
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-      - name: Uninstall Yarn
-        if: always()
-        run: npm uninstall -g yarn
+      - run: npm uninstall -g yarn
