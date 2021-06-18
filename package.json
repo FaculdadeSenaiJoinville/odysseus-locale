@@ -1,6 +1,6 @@
 {
-  "name": "senai-odyssey-locale",
-  "version": "1.2.1",
+  "name": "odyssey-dictionary",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "Faculdade Senai Joinville",
