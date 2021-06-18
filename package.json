@@ -1,14 +1,13 @@
 {
   "name": "odyssey-dictionary",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "Faculdade Senai Joinville",
   "license": "MIT",
   "scripts": {
     "build": "tsc --p ./",
-    "dev": "ts-node src",
-    "publish": "npm publish"
+    "dev": "ts-node src"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
