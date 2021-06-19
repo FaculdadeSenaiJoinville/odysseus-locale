@@ -1,3 +1,6 @@
+import { Properties } from "./Properties";
+import { Types } from "./Types";
+
 export class Locale {
 
 	constructor() {
@@ -19,8 +22,6 @@ export class Locale {
 		};
 
 		this.base_messages = {
-			internal_server_error: 'Ocorreu um erro interno!',
-
 			invalid_type: 'O valor para o campo "{{field}}" deve ser do tipo "{{type}}"',
 
 			required_field: 'Campo "{{field}}" é obrigatório.',
@@ -39,6 +40,16 @@ export class Locale {
 
 	protected messages: Object;
 
+	protected getFieldTranslation(field_name: string) {
+
+		const fields = {
+			...this.base_fields,
+			...this.fields
+		};
+
+		return fields[field_name];
+	}
+
 	public getName() {
 
 		return this.name;
@@ -46,14 +57,9 @@ export class Locale {
 
 	public getField(field_name: string) {
 
-		const fields = {
-			...this.base_fields,
-			...this.fields
-		};
+		const field = this.getFieldTranslation(field_name);
 
-		return fields[field_name]
-			? fields[field_name]
-			: `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o campo "${field_name}".`;
+		return field ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o campo "${field_name}".`;
 	};
 
 	public getMessage(message_name: string, config?: Object) {
@@ -76,10 +82,33 @@ export class Locale {
 
 				if (!message.includes(`{{${property}}}`)) {
 
-					return `ERRO DE TRADUÇÃO: Propriedade "${property}" não encontrada na mensagem "${message_name}"`;
+					return `ERRO DE TRADUÇÃO: Propriedade "${property}" não encontrada na mensagem "${message_name}".`;
 				}
 
-				message = message.replace(`{{${property}}}`, config[property]);
+				if (property === Properties.TYPE) {
+
+					if (!Types[config[property]]) {
+
+						return `ERRO DE TRADUÇÃO: Tradução para o tipo "${config[property]}" não encontrada.`;
+					}
+
+					message = message.replace(`{{${property}}}`, Types[config[property]]);
+				}
+				else if (property === Properties.FIELD) {
+
+					const field = this.getFieldTranslation(config[property]);
+
+					if (!field) {
+
+						return `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o campo "${config[property]}".`;
+					}
+
+					message = message.replace(`{{${property}}}`, field);
+				}
+				else {
+
+					message = message.replace(`{{${property}}}`, config[property]);
+				}
 			}
 
 			return message;
