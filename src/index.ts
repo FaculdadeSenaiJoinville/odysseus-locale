@@ -7,8 +7,3 @@ export const Dictionary = {
 	auth: new Auth(),
 	users: new Users()
 };
-
-console.log(Dictionary.users.getMessage('invalid_type', {
-	field: 'email',
-	type: 'number'
-}));
