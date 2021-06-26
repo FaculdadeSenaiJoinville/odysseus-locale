@@ -6,6 +6,9 @@
   "author": "Faculdade Senai Joinville",
   "license": "MIT",
   "scripts": {
+    "patch": "yarn version --patch",
+    "minor": "yarn version --minor",
+    "major": "yarn version --major",
     "build": "tsc --p ./",
     "dev": "ts-node src"
   },
