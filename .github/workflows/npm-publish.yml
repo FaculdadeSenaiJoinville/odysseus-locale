@@ -56,10 +56,23 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          
-      - name: Discord notification
+      
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+      
+      - name: Failure notification
+        if: ${{ failure() }}
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'Versão nova lançada rapaziada! Atualiza na tua branch aí.'
+          args: 'Versão ${{ steps.package-version.outputs.current-version}} não pôde ser publicada! É melhor o responsável se pronunciar.'
+      
+      - name: Success notification
+        if: ${{ success() }}
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'Versão ${{ steps.package-version.outputs.current-version}} publicada rapaziada! Atualizem essas branchs aí.'
