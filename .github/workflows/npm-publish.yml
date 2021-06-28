@@ -57,12 +57,9 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           
-  discord-notification:
-    needs: code-analysis
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Ilshidur/action-discord@master
-      - env:
+      - name: Discord notification
+        env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
         with:
-          args: 'Nova versão do locale lançada rapaziada.'
+          args: 'Versão nova lançada rapaziada! Atualiza na tua branch aí.'
