@@ -56,3 +56,13 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          
+  discord-notification:
+    needs: code-analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ilshidur/action-discord@master
+      - env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: 'Nova versão do locale lançada rapaziada.'
