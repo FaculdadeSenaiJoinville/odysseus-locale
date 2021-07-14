@@ -11,6 +11,8 @@ export class Auth extends Locale {
 		this.fields = {
 			email: 'E-mail',
 
+			password: 'Senha',
+
 			expiresIn: 'Expira em'
 		};
 
