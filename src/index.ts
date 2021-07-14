@@ -1,4 +1,3 @@
-import { Joi } from "./core/Joi";
 import { Auth } from "./translations/Auth";
 import { SystemErrors } from "./translations/SystemErrors";
 import { Users } from "./translations/Users";
@@ -8,5 +7,3 @@ export const Dictionary = {
 	auth: new Auth(),
 	users: new Users()
 };
-
-export const JoiMessages = new Joi();
