@@ -56,10 +56,26 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          
-      - name: Discord notification
+
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Extract version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.1.1
+
+      - name: Failure notification
+        if: ${{ failure() }}
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'Versão nova lançada rapaziada! Atualiza na tua branch aí.'
+          args: 'Versão ${{ steps.extract_version.outputs.version }} não pôde ser publicada! É melhor o responsável se pronunciar.'
+      
+      - name: Success notification
+        if: ${{ success() }}
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'Versão ${{ steps.extract_version.outputs.version }} publicada rapaziada! Atualizem essas branchs aí.'

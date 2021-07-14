@@ -13,7 +13,17 @@ export class Users extends Locale {
 
 			password: 'Senha',
 
-			active: 'Ativo'
+			active: 'Ativo',
+
+			type: 'Tipo'
+		};
+		
+		this.enums = {
+			ADMIN: 'Administrador',
+
+			PROFESSOR: 'Professor',
+
+			STUDENT: 'Estudante',
 		};
 
 		this.messages = {

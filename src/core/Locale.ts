@@ -40,6 +40,8 @@ export class Locale {
 
 	protected messages: Object;
 
+	protected enums: Object;
+
 	protected getFieldTranslation(field_name: string) {
 
 		const fields = {
@@ -117,4 +119,10 @@ export class Locale {
 		return messages[message_name];
 	}
 
+	public getEnum(enum_name: string) {
+
+		const fetchedEnum = this.enums[enum_name];
+
+		return fetchedEnum ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o enum "${enum_name}".`;
+	}
 }
