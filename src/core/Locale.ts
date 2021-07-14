@@ -1,5 +1,5 @@
-import { Properties } from "./Properties";
-import { Types } from "./Types";
+import { Properties } from "../types/properties.type";
+import { DataTypes } from "../common/DataTypes";
 
 export class Locale {
 
@@ -89,12 +89,12 @@ export class Locale {
 
 				if (property === Properties.TYPE) {
 
-					if (!Types[config[property]]) {
+					if (!DataTypes[config[property]]) {
 
 						return `ERRO DE TRADUÇÃO: Tradução para o tipo "${config[property]}" não encontrada.`;
 					}
 
-					message = message.replace(`{{${property}}}`, Types[config[property]]);
+					message = message.replace(`{{${property}}}`, DataTypes[config[property]]);
 				}
 				else if (property === Properties.FIELD) {
 

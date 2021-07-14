@@ -32,4 +32,5 @@ export class Users extends Locale {
     		invalid_password: 'Senha inválida.'
 		};
 	}
+
 }
