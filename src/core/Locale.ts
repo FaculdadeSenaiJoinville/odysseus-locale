@@ -1,5 +1,5 @@
 import { Properties } from "../types/properties.type";
-import { DataTypes } from "../common/DataTypes";
+import { DataTypes } from "../common/data-types";
 import { JoiContextProperties, JoiDetail, JoiErrorType } from "../types/joi.type";
 
 export class Locale {
@@ -91,12 +91,12 @@ export class Locale {
 		return fields[field_name];
 	}
 
-	public getName() {
+	public getTableName() {
 
 		return this.name;
 	};
 
-	public getField(field_name: string) {
+	public getFieldName(field_name: string) {
 
 		const field = this.getFieldTranslation(field_name);
 

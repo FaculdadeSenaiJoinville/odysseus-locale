@@ -1,4 +1,4 @@
-import { Locale } from "../core/Locale";
+import { Locale } from "../core/locale";
 
 export class Users extends Locale {
 

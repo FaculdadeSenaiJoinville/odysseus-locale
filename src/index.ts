@@ -1,6 +1,8 @@
-import { Auth } from "./translations/Auth";
-import { SystemErrors } from "./translations/SystemErrors";
-import { Users } from "./translations/Users";
+import {
+	Auth,
+	SystemErrors,
+	Users,
+} from "./translations";
 
 export const Dictionary = {
 	errors: new SystemErrors(),
