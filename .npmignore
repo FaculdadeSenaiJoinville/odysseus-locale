@@ -5,5 +5,5 @@ yarn.error
 .github
 tests
 jest.config.ts
-.eslintrc
+.eslintrc.js
 repository-logo.svg
