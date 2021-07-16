@@ -65,6 +65,14 @@ jobs:
         if: always()
         run: npm uninstall -g yarn
 
+      - name: Failure notification
+        if: ${{ failure() }}
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'A nova versão ${{ steps.extract_version.outputs.version }} não pôde ser publicada! Deu pau nos testes.'
+
   publish-npm:
     name: Publish
     needs: tests
@@ -105,7 +113,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'Versão ${{ steps.extract_version.outputs.version }} não pôde ser publicada! É melhor o responsável se pronunciar.'
+          args: 'A nova versão ${{ steps.extract_version.outputs.version }} não pôde ser publicada! Deu pau na hora de publicar.'
       
       - name: Success notification
         if: ${{ success() }}
