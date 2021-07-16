@@ -26,9 +26,6 @@ const config: Config.InitialOptions = {
 		'!src/modules/**/*.validation.ts',
 		'!src/**/*.snap'
 	],
-	coveragePathIgnorePatterns: [
-		
-	],
 	coverageThreshold: {
 		'global': {
 			'branches': 90,
