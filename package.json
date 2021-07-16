@@ -1,6 +1,6 @@
 {
 	"name": "odyssey-dictionary",
-	"version": "1.6.0",
+	"version": "2.0.0",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"author": "Faculdade Senai Joinville",
@@ -14,7 +14,7 @@
 		"test": "jest",
 		"lin:cov": "xdg-open ./coverage/lcov-report/index.html",
 		"win:cov": "start ./coverage/lcov-report/index.html",
-        "mac:cov": "open ./coverage/lcov-report/index.html",
+		"mac:cov": "open ./coverage/lcov-report/index.html",
 		"lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
 	},
 	"devDependencies": {
