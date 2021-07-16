@@ -1,4 +1,4 @@
-import { Locale } from "../core/locale";
+import { Locale } from '../core/locale';
 
 export class Users extends Locale {
 
@@ -23,7 +23,7 @@ export class Users extends Locale {
 
 			PROFESSOR: 'Professor',
 
-			STUDENT: 'Estudante',
+			STUDENT: 'Estudante'
 		};
 
 		this.messages = {

@@ -1,4 +1,4 @@
-import { Locale } from "../core/locale";
+import { Locale } from '../core/locale';
 
 export class Auth extends Locale {
 	

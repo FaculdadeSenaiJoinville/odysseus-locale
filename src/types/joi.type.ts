@@ -13,7 +13,7 @@ export enum JoiContextProperties {
 	KEY = '{{key}}',
 	LIMIT = '{{limit}}',
 	VALUE = '{{value}}'
-};
+}
 
 export enum JoiErrorType {
 	INDEX = 'index',
@@ -38,4 +38,4 @@ export enum JoiErrorType {
 	ARRAY_MAX = 'array.max',
 	ARRAY_UNIQUE = 'array.unique',
 	ALTERNATIVE_TYPES = 'alternative.types'
-};
+}
