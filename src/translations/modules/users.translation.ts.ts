@@ -1,4 +1,4 @@
-import { Locale } from '../core/locale';
+import { Locale } from '../../core/locale';
 
 export class Users extends Locale {
 
@@ -27,6 +27,8 @@ export class Users extends Locale {
 		};
 
 		this.messages = {
+			welcome: 'Seja bem vindo, {{user_name}}!',
+
 			invalid_email: 'E-mail inválido.',
 
     		invalid_password: 'Senha inválida.'

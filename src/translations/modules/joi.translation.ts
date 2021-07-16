@@ -1,6 +1,6 @@
-import { JoiContextProperties, JoiDetail, JoiErrorType } from '../types/joi.type';
-import { TranslationObject } from '../types/locale.type';
-import * as Modules from './';
+import { JoiContextProperties, JoiDetail, JoiErrorType } from '../../types/joi.type';
+import { TranslationObject } from '../../types/locale.type';
+import * as Modules from '..';
 
 export class Joi {
 
@@ -15,9 +15,9 @@ export class Joi {
         
 			[JoiErrorType.STRING_EMPTY]: 'O campo {{key}} é obrigatório.',
         
-			[JoiErrorType.EMAIL]: 'O valor {{value}} não é um E-mail válido.',
+			[JoiErrorType.EMAIL]: 'O valor "{{value}}" não é um E-mail válido.',
         
-			[JoiErrorType.REGEX]: 'O valor {{value}} está mal formatado.',
+			[JoiErrorType.REGEX]: 'O valor "{{value}}" está mal formatado.',
         
 			[JoiErrorType.NUMBER]: 'O campo {{key}} só aceita valores do tipo numérico.',
         
@@ -48,11 +48,20 @@ export class Joi {
     public translate(module: string, detail: JoiDetail) {
 		
     	const moduleName = this.toPascalCase(module);
-    	console.log(moduleName);
+		
+    	if (!Modules[moduleName]) {
 
+    		return `ERRO DE TRADUÇÃO (JOI): O módulo ${moduleName} (${module}) não existe.`;
+    	}
+    	
     	const moduleTranslations = new Modules[moduleName]();
 
     	let message = this.messages[detail.type];
+
+    	if (!message) {
+
+    		return `ERRO DE TRADUÇÃO (JOI): Não foi encontrada uma tradução para o tipo de erro "${detail.type}".`;
+    	}
     
     	if (message.includes(JoiContextProperties.KEY)) {
     
@@ -63,15 +72,20 @@ export class Joi {
     			message = message.replace(JoiContextProperties.KEY, field);
     		} else {
     
-    			message = message.replace(JoiContextProperties.KEY, '{FALHA AO IDENTIFICAR O CAMPO}');
+    			return 'ERRO DE TRADUÇÃO (JOI): Campo "key" não encontrado nos detalhes.';
     		}
     	}
     
     	if (message.includes(JoiContextProperties.LIMIT)) {
     
-    		const limit = detail.context.limit ? detail.context.limit.toString() : '{VALOR NÃO ENCONTRADO}';
-    
-    		message = message.replace(JoiContextProperties.LIMIT, limit);
+    		if (detail.context.limit) {
+
+    			message = message.replace(JoiContextProperties.LIMIT, detail.context.limit.toString());
+    		}
+    		else {
+
+    			return 'ERRO DE TRADUÇÃO (JOI): Campo "limit" não encontrado nos detalhes.';
+    		}
     	}
     
     	if (message.includes(JoiContextProperties.VALUE)) {

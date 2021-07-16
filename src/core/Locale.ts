@@ -92,7 +92,7 @@ export class Locale {
 
 					if (!DataTypes[config[property]]) {
 
-						return `ERRO DE TRADUÇÃO: Tradução para o tipo "${config[property]}" não encontrada.`;
+						return `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o tipo "${config[property]}".`;
 					}
 
 					message = message.replace(`{{${property}}}`, DataTypes[config[property]]);
@@ -102,10 +102,10 @@ export class Locale {
 					const field = this.getFieldTranslation(config[property]);
 
 					if (!field) {
-
+						
 						return `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o campo "${config[property]}".`;
 					}
-
+					
 					message = message.replace(`{{${property}}}`, field);
 				}
 				else {
