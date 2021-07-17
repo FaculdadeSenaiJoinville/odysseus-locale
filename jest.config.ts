@@ -1,11 +1,12 @@
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
+	roots: ['<rootDir>/src'],
 	verbose: true,
 	preset: 'ts-jest',
 	testEnvironment: 'node',
 	transform: {
-		'\\.(ts)$': 'ts-jest'
+		'^.+\\.ts$': 'ts-jest'
 	},
 	modulePaths: [
 		'<rootDir>'

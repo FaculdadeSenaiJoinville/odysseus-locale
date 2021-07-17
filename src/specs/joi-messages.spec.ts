@@ -1,4 +1,4 @@
-import { JoiMessages } from '../src';
+import { JoiMessages } from '..';
 
 describe('JoiMessages Test', () => {
 

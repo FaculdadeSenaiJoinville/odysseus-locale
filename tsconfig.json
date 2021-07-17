@@ -23,7 +23,13 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 	},
+	"include": [
+		"src"
+	],
 	"exclude": [
+		".github",
+		"node_modules",
 		"dist",
+		"src/specs"
 	]
 }
