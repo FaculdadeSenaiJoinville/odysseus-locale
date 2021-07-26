@@ -13,6 +13,8 @@ export class Users extends Locale {
 
 			password: 'Senha',
 
+			confirm_password: 'Confirmar Senha',
+
 			active: 'Ativo',
 
 			type: 'Tipo'
@@ -31,7 +33,9 @@ export class Users extends Locale {
 
 			invalid_email: 'E-mail inválido.',
 
-    		invalid_password: 'Senha inválida.'
+			invalid_password: 'Senha inválida.',
+
+			password_not_equal: 'As senhas devem ser iguais.'
 		};
 	}
 

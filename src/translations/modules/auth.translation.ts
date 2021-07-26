@@ -21,6 +21,8 @@ export class Auth extends Locale {
 
 			successfully_logged_out: 'Logout realizado com sucesso!',
 
+			unauthorized: 'Ei! Você não tem permissão para fazer isso.',
+
 			user_not_found: 'Usuário não encontrado.'
 		};
 	}
