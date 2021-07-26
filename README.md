@@ -16,8 +16,6 @@
 ## Descrição
 Odyssey Dictionary é um pacote npm que contem as traduções de campos e mensagens para o sistema Odyssey.
 
-[Discord](https://discord.gg/vk9jFUFh)
-
 ```bash
 git clone https://github.com/FaculdadeSenaiJoinville/odyssey-dictionary.git
 ```
