@@ -5,6 +5,11 @@
 	"types": "./dist/index.d.ts",
 	"author": "Faculdade Senai Joinville",
 	"license": "MIT",
+	"engines": {
+		"node": ">=14.17.3",
+		"npm": ">=6.14.13",
+		"yarn": ">=1.22.5"
+	},
 	"scripts": {
 		"patch": "yarn version --patch",
 		"minor": "yarn version --minor",
