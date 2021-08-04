@@ -16,7 +16,6 @@ on:
 jobs:
   tests:
     name: Tests
-    needs: code-analysis
     runs-on: ubuntu-latest
 
     strategy:
