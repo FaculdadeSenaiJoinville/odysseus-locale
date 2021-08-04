@@ -2,16 +2,6 @@ import { Dictionary } from '..';
 
 describe('Dictionary Test', () => {
 
-	describe('GetTableName', () => {
-
-		it('should call the method and return the scope name', () => {
-
-			const expected = 'Usuários';
-			
-			expect(Dictionary.users.getTableName()).toBe(expected);
-		});
-	});
-
 	describe('GetFieldName', () => {
 
 		it('should receive a valid field name and return its translation', () => {

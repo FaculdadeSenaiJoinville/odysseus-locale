@@ -6,8 +6,6 @@ export class Auth extends Locale {
 
 		super();
 
-		this.name = 'Autenticação';
-
 		this.fields = {
 			email: 'E-mail',
 
