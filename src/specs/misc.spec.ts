@@ -9,7 +9,7 @@ describe('Misc Test', () => {
 			const input = 'create'
 			const expected = 'Cadastrar';
 			
-			expect(Dictionary.getLabel(input)).toBe(expected);
+			expect(Dictionary.misc.getLabel(input)).toBe(expected);
 		});
 
 		it('should call the method and return an error message', () => {
@@ -17,7 +17,7 @@ describe('Misc Test', () => {
 			const input = 'invalid_label_name_for_test'
 			const expected = `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a label "${input}".`;
 			
-			expect(Dictionary.getLabel(input)).toBe(expected);
+			expect(Dictionary.misc.getLabel(input)).toBe(expected);
 		});
 	});
 
@@ -28,7 +28,7 @@ describe('Misc Test', () => {
 			const input = 'users'
 			const expected = 'Usuários';
 			
-			expect(Dictionary.getModule(input)).toBe(expected);
+			expect(Dictionary.misc.getModule(input)).toBe(expected);
 		});
 
 		it('should call the method and return an error message', () => {
@@ -36,7 +36,7 @@ describe('Misc Test', () => {
 			const input = 'invalid_module_name_for_test'
 			const expected = `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o módulo "${input}".`;
 			
-			expect(Dictionary.getModule(input)).toBe(expected);
+			expect(Dictionary.misc.getModule(input)).toBe(expected);
 		});
 	});
 });

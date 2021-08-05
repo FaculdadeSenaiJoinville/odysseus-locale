@@ -1,37 +1,48 @@
 import { TranslationObject } from '../types/locale.type';
 
-const modules: TranslationObject = {
-	auth: 'Autenticação',
-	
-	users: 'Usuários',
+export class Misc {
 
-	groups: 'Grupos'
-}
+	constructor() {
 
-const labels: TranslationObject = {
-	create: 'Cadastrar',
+		this.modules = {
+			auth: 'Autenticação',
 
-	edit: 'Editar',
+			users: 'Usuários',
 
-	delete: 'Excluir',
+			groups: 'Grupos'
+		};
 
-	exit: 'Sair',
+		this.labels = {
+			create: 'Cadastrar',
 
-	open: 'Abrir',
+			edit: 'Editar',
 
-	close: 'Fechar'
-};
+			delete: 'Excluir',
 
-export function getLabel(label: string): string {
+			exit: 'Sair',
 
-	const labelText = labels[label];
+			open: 'Abrir',
 
-	return labelText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a label "${label}".`;
-}
+			close: 'Fechar'
+		};
+	}
 
-export function getModule(module: string) {
+	private modules: TranslationObject;
 
-	const moduleText = modules[module];
+	private labels: TranslationObject;
 
-	return moduleText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o módulo "${module}".`;
+	public getLabel(label: string): string {
+
+		const labelText = this.labels[label];
+
+		return labelText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a label "${label}".`;
+	}
+
+	public getModule(module: string) {
+
+		const moduleText = this.modules[module];
+
+		return moduleText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o módulo "${module}".`;
+	}
+
 }

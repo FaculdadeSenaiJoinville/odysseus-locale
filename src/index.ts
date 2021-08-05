@@ -4,19 +4,17 @@ import {
 	SystemErrors,
 	Users
 } from './translations';
-import { getLabel, getModule } from './core/misc';
+import { Misc } from './core/misc';
 
 export class OdysseyDictionary {
-	getLabel: (label: string) => string;
-	getModule: (label: string) => string;
+	misc: Misc;
 	errors: SystemErrors;
 	auth: Auth;
 	users: Users;
 }
 
 export const Dictionary: OdysseyDictionary = {
-	getLabel,
-	getModule,
+	misc: new Misc(),
 	errors: new SystemErrors(),
 	auth: new Auth(),
 	users: new Users()
