@@ -15,6 +15,8 @@ export class Misc {
 		this.labels = {
 			create: 'Cadastrar',
 
+			new: 'Novo',
+			
 			edit: 'Editar',
 
 			delete: 'Excluir',
