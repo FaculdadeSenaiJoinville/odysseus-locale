@@ -12,6 +12,7 @@
 		"jest": true
 	},
 	"ignorePatterns": [
+		"dist",
 		".eslintrc.js",
 		"src/specs"
 	],
