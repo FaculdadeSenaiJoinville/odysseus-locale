@@ -35,7 +35,9 @@ export class Users extends Locale {
 
 			invalid_password: 'Senha inválida.',
 
-			password_not_equal: 'As senhas devem ser iguais.'
+			password_not_equal: 'As senhas devem ser iguais.',
+
+			user_already_disabled: 'O usuário já está desativado.'
 		};
 	}
 
