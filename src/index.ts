@@ -4,8 +4,17 @@ import {
 	SystemErrors,
 	Users
 } from './translations';
+import { Misc } from './core/misc';
 
-export const Dictionary = {
+export class OdysseyDictionary {
+	misc: Misc;
+	errors: SystemErrors;
+	auth: Auth;
+	users: Users;
+}
+
+export const Dictionary: OdysseyDictionary = {
+	misc: new Misc(),
 	errors: new SystemErrors(),
 	auth: new Auth(),
 	users: new Users()

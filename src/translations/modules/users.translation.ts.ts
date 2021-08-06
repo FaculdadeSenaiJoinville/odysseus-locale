@@ -6,8 +6,6 @@ export class Users extends Locale {
 
 		super();
 
-		this.name = 'Usuários';
-
 		this.fields = {
 			email: 'E-mail',
 

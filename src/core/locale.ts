@@ -31,8 +31,6 @@ export class Locale {
 		};
 	}
 
-	protected name: string;
-
 	protected base_fields: TranslationObject;
 
 	protected fields: TranslationObject;
@@ -51,11 +49,6 @@ export class Locale {
 		};
 
 		return fields[field_name];
-	}
-
-	public getTableName() {
-
-		return this.name;
 	}
 
 	public getFieldName(field_name: string) {
@@ -120,7 +113,7 @@ export class Locale {
 		return messages[message_name];
 	}
 
-	public getEnum(enum_name: string) {
+	public getEnum(enum_name: string): string {
 
 		const fetchedEnum = this.enums[enum_name];
 
