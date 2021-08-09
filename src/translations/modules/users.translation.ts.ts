@@ -33,7 +33,9 @@ export class Users extends Locale {
 
 			invalid_password: 'Senha inválida.',
 
-			password_not_equal: 'As senhas devem ser iguais.'
+			password_not_equal: 'As senhas devem ser iguais.',
+
+			update_payload_must_have_diferences: 'Os dados não podem ser os mesmos que os atuais.'
 		};
 	}
 
