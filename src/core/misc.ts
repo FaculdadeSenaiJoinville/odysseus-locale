@@ -25,13 +25,21 @@ export class Misc {
 
 			open: 'Abrir',
 
-			close: 'Fechar'
+			close: 'Fechar',
+
+			go_back: 'Voltar',
+
+			find: 'Buscar',
+
+			write_here: 'Digite aqui'
 		};
 	}
 
 	private modules: TranslationObject;
 
 	private labels: TranslationObject;
+
+	private messages: TranslationObject;
 
 	public getLabel(label: string): string {
 
@@ -45,6 +53,13 @@ export class Misc {
 		const moduleText = this.modules[module];
 
 		return moduleText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o módulo "${module}".`;
+	}
+
+	public getMessage(message: string): string {
+
+		const messageText = this.messages[message];
+
+		return messageText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a mensagem "${message}".`;
 	}
 
 }
