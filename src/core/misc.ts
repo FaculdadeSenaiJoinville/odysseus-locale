@@ -16,6 +16,10 @@ export class Misc {
 			create: 'Cadastrar',
 
 			new: 'Novo',
+
+			save: 'Salvar',
+
+			save_and_new: 'Salvar e Criar Novo',
 			
 			edit: 'Editar',
 
