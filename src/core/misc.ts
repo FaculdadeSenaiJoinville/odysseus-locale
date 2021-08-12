@@ -25,7 +25,13 @@ export class Misc {
 
 			open: 'Abrir',
 
-			close: 'Fechar'
+			close: 'Fechar',
+
+			go_back: 'Voltar',
+
+			find: 'Buscar',
+
+			write_here: 'Digite aqui'
 		};
 	}
 
