@@ -31,6 +31,8 @@ export class Misc {
 
 			close: 'Fechar',
 
+			enter: 'Entrar',
+
 			go_back: 'Voltar',
 
 			find: 'Buscar',
