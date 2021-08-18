@@ -17,7 +17,7 @@ export class Users extends Locale {
 
 			type: 'Tipo'
 		};
-		
+
 		this.enums = {
 			ADMIN: 'Administrador',
 
@@ -35,8 +35,18 @@ export class Users extends Locale {
 
 			password_not_equal: 'As senhas devem ser iguais.',
 
-			update_payload_must_have_diferences: 'Os dados não podem ser os mesmos que os atuais.'
+			update_payload_must_have_diferences: 'Os dados não podem ser os mesmos que os atuais.',
+
+			successfully_created: 'Usuário cadastrado com sucesso!',
+
+			password_successfully_updated: 'Senha atualizada com sucesso!',
+
+			successfully_updated: 'Dados do usuário atualizados com sucesso!'
 		};
+
+		this.labels = {
+			create_new_user: 'Cadastrar um novo usuário'
+		}
 	}
 
 }

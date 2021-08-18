@@ -122,4 +122,23 @@ describe('Dictionary Test', () => {
 			expect(Dictionary.users.getEnum(input)).toBe(expected);
 		});
 	});
+
+	describe('GetLabel', () => {
+
+		it('should call the method and return the label translation', () => {
+
+			const input = 'create_new_user'
+			const expected = 'Cadastrar um novo usuário';
+			
+			expect(Dictionary.users.getLabel(input)).toBe(expected);
+		});
+
+		it('should call the method and return an error message', () => {
+
+			const input = 'invalid_label_name_for_test'
+			const expected = `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a label "${input}".`;
+			
+			expect(Dictionary.users.getLabel(input)).toBe(expected);
+		});
+	});
 });

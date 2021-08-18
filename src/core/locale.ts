@@ -41,6 +41,8 @@ export class Locale {
 
 	protected enums: TranslationObject;
 
+	protected labels: TranslationObject;
+
 	protected getFieldTranslation(field_name: string) {
 
 		const fields = {
@@ -118,5 +120,12 @@ export class Locale {
 		const fetchedEnum = this.enums[enum_name];
 
 		return fetchedEnum ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para o enum "${enum_name}".`;
+	}
+
+	public getLabel(label: string): string {
+
+		const labelText = this.labels[label];
+
+		return labelText ?? `ERRO DE TRADUÇÃO: Não foi encontrada uma tradução para a label "${label}".`;
 	}
 }
