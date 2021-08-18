@@ -39,7 +39,9 @@ export class Users extends Locale {
 
 			successfully_created: 'Usuário cadastrado com sucesso!',
 
-			password_successfully_updated: 'Senha atualizada com sucesso!'
+			password_successfully_updated: 'Senha atualizada com sucesso!',
+
+			successfully_updated: 'Dados do usuário atualizados com sucesso!'
 		};
 
 		this.labels = {
