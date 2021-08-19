@@ -16,6 +16,10 @@ export class Misc {
 			create: 'Cadastrar',
 
 			new: 'Novo',
+
+			save: 'Salvar',
+
+			save_and_new: 'Salvar e Criar Novo',
 			
 			edit: 'Editar',
 
@@ -25,7 +29,15 @@ export class Misc {
 
 			open: 'Abrir',
 
-			close: 'Fechar'
+			close: 'Fechar',
+
+			enter: 'Entrar',
+
+			go_back: 'Voltar',
+
+			find: 'Buscar',
+
+			write_here: 'Digite aqui'
 		};
 	}
 
