@@ -37,7 +37,13 @@ export class Misc {
 
 			find: 'Buscar',
 
-			write_here: 'Digite aqui'
+			write_here: 'Digite aqui',
+
+			update_status: 'Atualizar Status',
+
+			confirm: 'Confirmar',
+
+			cancel: 'Cancelar'
 		};
 	}
 

@@ -45,7 +45,11 @@ export class Users extends Locale {
 		};
 
 		this.labels = {
-			create_new_user: 'Cadastrar um novo usuário'
+			create_new_user: 'Cadastrar um novo usuário',
+
+			inactive: 'Inativo',
+
+			active: 'Ativo'
 		}
 	}
 
