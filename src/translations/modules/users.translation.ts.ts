@@ -47,12 +47,18 @@ export class Users extends Locale {
 
 			successfully_updated: 'Dados do usuário atualizados com sucesso!',
 
+			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?',
+			
 			status_successfully_updated: 'Status atualizado com sucesso!'
 		};
 
 		this.labels = {
 			create_new_user: 'Cadastrar um novo usuário',
 
+			inactive: 'Inativo',
+
+			active: 'Ativo',
+			
 			save_password: 'Salvar Senha'
 		}
 	}

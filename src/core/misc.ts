@@ -39,6 +39,12 @@ export class Misc {
 
 			write_here: 'Digite aqui',
 
+			update_status: 'Atualizar Status',
+
+			confirm: 'Confirmar',
+
+			cancel: 'Cancelar',
+			
 			profile: 'Perfil'
 		};
 	}
