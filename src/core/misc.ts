@@ -43,7 +43,9 @@ export class Misc {
 
 			confirm: 'Confirmar',
 
-			cancel: 'Cancelar'
+			cancel: 'Cancelar',
+			
+			profile: 'Perfil'
 		};
 	}
 

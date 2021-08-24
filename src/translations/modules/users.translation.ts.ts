@@ -13,6 +13,10 @@ export class Users extends Locale {
 
 			confirm_password: 'Confirmar Senha',
 
+			new_password: 'Nova Senha',
+
+			confirm_new_password: 'Confirmar Nova Senha',
+
 			active: 'Ativo',
 
 			type: 'Tipo'
@@ -43,7 +47,9 @@ export class Users extends Locale {
 
 			successfully_updated: 'Dados do usuário atualizados com sucesso!',
 
-			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?'
+			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?',
+			
+			status_successfully_updated: 'Status atualizado com sucesso!'
 		};
 
 		this.labels = {
@@ -51,7 +57,9 @@ export class Users extends Locale {
 
 			inactive: 'Inativo',
 
-			active: 'Ativo'
+			active: 'Ativo',
+			
+			save_password: 'Salvar Senha'
 		}
 	}
 
