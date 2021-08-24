@@ -13,6 +13,10 @@ export class Users extends Locale {
 
 			confirm_password: 'Confirmar Senha',
 
+			new_password: 'Nova Senha',
+
+			confirm_new_password: 'Confirmar Nova Senha',
+
 			active: 'Ativo',
 
 			type: 'Tipo'
@@ -47,7 +51,9 @@ export class Users extends Locale {
 		};
 
 		this.labels = {
-			create_new_user: 'Cadastrar um novo usuário'
+			create_new_user: 'Cadastrar um novo usuário',
+
+			save_password: 'Salvar Senha'
 		}
 	}
 

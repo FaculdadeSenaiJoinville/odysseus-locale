@@ -37,7 +37,9 @@ export class Misc {
 
 			find: 'Buscar',
 
-			write_here: 'Digite aqui'
+			write_here: 'Digite aqui',
+
+			profile: 'Perfil'
 		};
 	}
 
