@@ -49,7 +49,9 @@ export class Users extends Locale {
 
 			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?',
 			
-			status_successfully_updated: 'Status atualizado com sucesso!'
+			status_successfully_updated: 'Status atualizado com sucesso!',
+
+			visualize_all_trails: 'Visualizar todas as trilhas'
 		};
 
 		this.labels = {
