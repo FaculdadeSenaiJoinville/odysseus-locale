@@ -45,9 +45,9 @@ export class Misc {
 
 			cancel: 'Cancelar',
 			
-			profile: 'Perfil',
+			details: 'Detalhes',
 
-			details: 'Detalhes'
+			profile: 'Perfil'
 		};
 
 		this.messages = {
