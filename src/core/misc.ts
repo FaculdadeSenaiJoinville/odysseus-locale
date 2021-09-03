@@ -45,7 +45,9 @@ export class Misc {
 
 			cancel: 'Cancelar',
 			
-			profile: 'Perfil'
+			profile: 'Perfil',
+
+			details: 'Detalhes'
 		};
 	}
 
