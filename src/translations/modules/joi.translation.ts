@@ -39,7 +39,11 @@ export class Joi {
         
 			[JoiErrorType.ARRAY_MIN]: 'O valor do campo {{key}} deve ser uma lista de no mínimo {{limit}} item(s).',
         
-			[JoiErrorType.ARRAY_MAX]: 'O valor do campo {{key}} deve ser uma lista de no máximo {{limit}} item(s).'
+			[JoiErrorType.ARRAY_MAX]: 'O valor do campo {{key}} deve ser uma lista de no máximo {{limit}} item(s).',
+
+			[JoiErrorType.OBJECT_UNKNOWN]: 'O campo {{key}} não é um campo válido.',
+
+			[JoiErrorType.ANY_UNKNOWN]: 'O campo {{key}} não é um campo válido.'
 		};
 	}
 
