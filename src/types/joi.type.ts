@@ -37,5 +37,7 @@ export enum JoiErrorType {
 	ARRAY_MIN = 'array.min',
 	ARRAY_MAX = 'array.max',
 	ARRAY_UNIQUE = 'array.unique',
-	ALTERNATIVE_TYPES = 'alternative.types'
+	ALTERNATIVE_TYPES = 'alternative.types',
+	OBJECT_UNKNOWN = 'object.unknown',
+	ANY_UNKNOWN = 'any.unknown'
 }
