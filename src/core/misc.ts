@@ -47,11 +47,15 @@ export class Misc {
 			
 			details: 'Detalhes',
 
-			profile: 'Perfil'
+			profile: 'Perfil',
+
+			search_by_name: 'Buscar por nome'
 		};
 
 		this.messages = {
-			no_data_found: 'Nenhum dado encontrado.'
+			no_data_found: 'Nenhum dado encontrado.',
+
+			loading: 'Carregando...'
 		}
 	}
 
