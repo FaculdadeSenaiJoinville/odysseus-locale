@@ -45,11 +45,17 @@ export class Misc {
 
 			cancel: 'Cancelar',
 			
-			profile: 'Perfil'
+			details: 'Detalhes',
+
+			profile: 'Perfil',
+
+			search_by_name: 'Buscar por nome'
 		};
 
 		this.messages = {
-			no_data_found: 'Nenhum dado encontrado.'
+			no_data_found: 'Nenhum dado encontrado.',
+
+			loading: 'Carregando...'
 		}
 	}
 
