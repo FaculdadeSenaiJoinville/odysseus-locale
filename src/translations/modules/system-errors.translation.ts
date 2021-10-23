@@ -7,7 +7,9 @@ export class SystemErrors extends Locale {
 		super();
 
 		this.messages = {
-			internal_server_error: 'Ocorreu um erro interno!'
+			internal_server_error: 'Ocorreu um erro interno!',
+
+			duplicate_entry: '{{value}} já está em uso!'
 		}
 	}
 
