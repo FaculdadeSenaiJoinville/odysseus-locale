@@ -49,7 +49,9 @@ export class Misc {
 
 			profile: 'Perfil',
 
-			search_by_name: 'Buscar por nome'
+			search_by_name: 'Buscar por nome',
+
+			required: 'Obrigatório'
 		};
 
 		this.messages = {
