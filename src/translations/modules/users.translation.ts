@@ -51,7 +51,9 @@ export class Users extends Locale {
 			
 			status_successfully_updated: 'Status atualizado com sucesso!',
 
-			visualize_all_trails: 'Visualizar todas as trilhas'
+			visualize_all_trails: 'Visualizar todas as trilhas',
+
+			must_have_last_name: 'Preencha com o nome completo'
 		};
 
 		this.labels = {
