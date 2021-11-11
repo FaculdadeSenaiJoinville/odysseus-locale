@@ -9,7 +9,9 @@ export class Groups extends Locale {
 		this.fields = {
 			description: 'Descrição',
 
-			users: 'Membros'
+			users: 'Membros',
+
+			name: 'Nome'
 		};
 
 		this.messages = {
@@ -19,7 +21,9 @@ export class Groups extends Locale {
 
 			successfully_updated: 'Dados do grupo atualizados com sucesso!',
 
-			successfully_deleted: 'Grupo excluído com sucesso!'
+			successfully_deleted: 'Grupo excluído com sucesso!',
+
+			users_per_page: 'Membros por página'
 		};
 
 		this.labels = {
