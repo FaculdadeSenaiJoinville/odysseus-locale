@@ -9,7 +9,9 @@ export class Misc {
 
 			users: 'Usuários',
 
-			groups: 'Grupos'
+			groups: 'Grupos',
+
+			contents: 'Conteúdos'
 		};
 
 		this.labels = {
