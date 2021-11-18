@@ -9,7 +9,13 @@ export class Misc {
 
 			users: 'Usuários',
 
-			groups: 'Grupos'
+			groups: 'Grupos',
+
+			chatbot: 'Chatbot',
+
+			bot_contents: 'Conteúdos',
+
+			bot_intents: 'Intenções'
 		};
 
 		this.labels = {

@@ -3,7 +3,8 @@ import {
 	Joi,
 	SystemErrors,
 	Users,
-	Groups
+	Groups,
+	Chatbot
 } from './translations';
 import { Misc } from './core/misc';
 
@@ -13,6 +14,7 @@ export class OdysseyDictionary {
 	auth: Auth;
 	users: Users;
 	groups: Groups;
+	chatbot: Chatbot;
 }
 
 export const Dictionary: OdysseyDictionary = {
@@ -20,7 +22,8 @@ export const Dictionary: OdysseyDictionary = {
 	errors: new SystemErrors(),
 	auth: new Auth(),
 	users: new Users(),
-	groups: new Groups()
+	groups: new Groups(),
+	chatbot: new Chatbot()
 };
 
 export const JoiMessages = new Joi();
