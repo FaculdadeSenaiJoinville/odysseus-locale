@@ -63,7 +63,9 @@ export class Users extends Locale {
 
 			active: 'Ativo',
 			
-			save_password: 'Salvar Senha'
+			save_password: 'Salvar Senha',
+
+			list_page_description: 'Listagem de usuarios do sistema'
 		}
 	}
 
