@@ -4,7 +4,9 @@ import {
 	SystemErrors,
 	Users,
 	Groups,
-	Chatbot
+	Chatbot,
+	BotContent,
+	BotIntent
 } from './translations';
 import { Misc } from './core/misc';
 
@@ -14,6 +16,8 @@ export class OdysseyDictionary {
 	auth: Auth;
 	users: Users;
 	groups: Groups;
+	bot_content: BotContent;
+	bot_intent: BotIntent;
 	chatbot: Chatbot;
 }
 
@@ -23,6 +27,8 @@ export const Dictionary: OdysseyDictionary = {
 	auth: new Auth(),
 	users: new Users(),
 	groups: new Groups(),
+	bot_content: new BotContent(),
+	bot_intent: new BotIntent(),
 	chatbot: new Chatbot()
 };
 

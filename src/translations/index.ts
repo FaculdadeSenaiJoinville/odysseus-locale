@@ -4,3 +4,5 @@ export * from './modules/system-errors.translation';
 export * from './modules/users.translation';
 export * from './modules/groups.translation';
 export * from './modules/chatbot.translation';
+export * from './modules/bot-contents.translation';
+export * from './modules/bot-intents.translation';
