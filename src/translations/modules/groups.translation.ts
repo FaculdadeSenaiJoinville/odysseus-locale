@@ -27,7 +27,9 @@ export class Groups extends Locale {
 		};
 
 		this.labels = {
-			create_new_group: 'Criar um novo grupo'
+			create_new_group: 'Criar um novo grupo',
+
+			list_page_description: 'Listagem de grupos do sistema'
 		}
 	}
 
