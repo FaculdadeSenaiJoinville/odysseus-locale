@@ -7,6 +7,8 @@ export class BotIntent extends Locale {
 		super();
 
 		this.fields = {
+			contents: 'Conteúdos',
+
 			message: 'Mensagem',
 
 			messages: 'Mensagens'

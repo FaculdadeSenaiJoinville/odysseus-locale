@@ -9,9 +9,7 @@ export class BotContent extends Locale {
 		this.fields = {
 			link: 'Link',
 
-			explanation: 'Resumo',
-
-			contents: 'Conteúdos'
+			explanation: 'Resumo'
 		};
 
 		this.messages = {
