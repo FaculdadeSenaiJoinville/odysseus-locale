@@ -23,6 +23,8 @@ export class Groups extends Locale {
 
 			successfully_deleted: 'Grupo excluído com sucesso!',
 
+			confirm_delete: 'Deseja mesmo excluir o Grupo "{{group_name}}"?',
+
 			users_per_page: 'Membros por página'
 		};
 
