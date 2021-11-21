@@ -23,7 +23,13 @@ export class BotContent extends Locale {
 		this.labels = {
 			create_new_content: 'Cadastrar um novo conteúdo',
 
-			list_page_description: 'Listagem de conteúdos do chatbot'
+			list_page_description: 'Listagem de conteúdos do chatbot',
+
+			bot_contents_per_page: 'Conteúdos por página',
+
+			no_bot_contents_associated: 'Nenhum conteúdo associado',
+
+			assign_bot_content: 'Associar conteúdo...'
 		}
 	}
 

@@ -16,8 +16,8 @@ export class OdysseyDictionary {
 	auth: Auth;
 	users: Users;
 	groups: Groups;
-	bot_content: BotContent;
-	bot_intent: BotIntent;
+	bot_contents: BotContent;
+	bot_intents: BotIntent;
 	chatbot: Chatbot;
 }
 
@@ -27,8 +27,8 @@ export const Dictionary: OdysseyDictionary = {
 	auth: new Auth(),
 	users: new Users(),
 	groups: new Groups(),
-	bot_content: new BotContent(),
-	bot_intent: new BotIntent(),
+	bot_contents: new BotContent(),
+	bot_intents: new BotIntent(),
 	chatbot: new Chatbot()
 };
 
