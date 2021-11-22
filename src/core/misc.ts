@@ -57,7 +57,11 @@ export class Misc {
 
 			search_by_name: 'Buscar por nome',
 
-			required: 'Obrigatório'
+			required: 'Obrigatório',
+
+			add: 'Adicionar',
+
+			remove: 'Remover'
 		};
 
 		this.messages = {

@@ -11,7 +11,9 @@ export class BotIntent extends Locale {
 
 			message: 'Mensagem',
 
-			messages: 'Mensagens'
+			messages: 'Mensagens',
+
+			training_phrases: 'Frases de Treinamento'
 		};
 
 		this.messages = {
