@@ -6,7 +6,8 @@ import {
 	Groups,
 	Chatbot,
 	BotContent,
-	BotIntent
+	BotIntent,
+	BotHistory
 } from './translations';
 import { Misc } from './core/misc';
 
@@ -19,6 +20,7 @@ export class OdysseyDictionary {
 	bot_contents: BotContent;
 	bot_intents: BotIntent;
 	chatbot: Chatbot;
+	bot_histories: BotHistory;
 }
 
 export const Dictionary: OdysseyDictionary = {
@@ -29,7 +31,8 @@ export const Dictionary: OdysseyDictionary = {
 	groups: new Groups(),
 	bot_contents: new BotContent(),
 	bot_intents: new BotIntent(),
-	chatbot: new Chatbot()
+	chatbot: new Chatbot(),
+	bot_histories: new BotHistory()
 };
 
 export const JoiMessages = new Joi();
