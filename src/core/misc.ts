@@ -15,7 +15,9 @@ export class Misc {
 
 			bot_contents: 'Conteúdos',
 
-			bot_intents: 'Intenções'
+			bot_intents: 'Intenções',
+
+			bot_histories: 'Histórico'
 		};
 
 		this.labels = {
