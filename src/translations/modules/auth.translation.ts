@@ -21,8 +21,18 @@ export class Auth extends Locale {
 
 			unauthorized: 'Ei! Você não tem permissão para fazer isso.',
 
-			user_not_found: 'Usuário não encontrado.'
+			user_not_found: 'Usuário não encontrado.',
+
+			reset_password_email_sent: 'E-mail de recuperação de senha enviado.'
 		};
+
+		this.labels = {
+			return_to_login: 'Voltar para o login',
+
+			forgot_password: 'Esqueci minha senha',
+
+			reset_password_orientation: 'Digite o seu email logo abaixo e clique no botão "ENVIAR" para receber um link para trocar sua senha.'
+		}
 	}
 
 }

@@ -63,7 +63,9 @@ export class Misc {
 
 			add: 'Adicionar',
 
-			remove: 'Remover'
+			remove: 'Remover',
+
+			send: 'Enviar'
 		};
 
 		this.messages = {
