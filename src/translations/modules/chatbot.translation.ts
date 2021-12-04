@@ -9,6 +9,10 @@ export class Chatbot extends Locale {
 		this.messages = {
 			chatbot_failed: 'Ooops! Deu um um problema nos meus circuitos...'
 		};
+
+		this.labels = {
+			chatbot_name: 'Chatbot Hermes'
+		}
 	}
 
 }
