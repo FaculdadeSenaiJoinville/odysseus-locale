@@ -7,7 +7,8 @@ import {
 	Chatbot,
 	BotContent,
 	BotIntent,
-	BotHistory
+	BotHistory,
+	Trails
 } from './translations';
 import { Misc } from './core/misc';
 
@@ -21,6 +22,7 @@ export class OdysseyDictionary {
 	bot_intents: BotIntent;
 	chatbot: Chatbot;
 	bot_histories: BotHistory;
+	trails: Trails;
 }
 
 export const Dictionary: OdysseyDictionary = {
@@ -32,7 +34,8 @@ export const Dictionary: OdysseyDictionary = {
 	bot_contents: new BotContent(),
 	bot_intents: new BotIntent(),
 	chatbot: new Chatbot(),
-	bot_histories: new BotHistory()
+	bot_histories: new BotHistory(),
+	trails: new Trails()
 };
 
 export const JoiMessages = new Joi();

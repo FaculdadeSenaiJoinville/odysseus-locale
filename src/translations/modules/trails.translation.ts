@@ -65,7 +65,7 @@ export class Trails extends Locale {
 			
 			save_password: 'Salvar Senha',
 
-			list_page_description: 'Listagem de usuarios do sistema',
+			list_page_description: 'Listagem de trilhas do sistema',
 
 			users_per_page: 'Membros por página',
 
