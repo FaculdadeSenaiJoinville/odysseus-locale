@@ -23,11 +23,11 @@ export class Trails extends Locale {
 		};
 
 		this.enums = {
-			ADMIN: 'Administrador',
+			ONEDIT: 'Em Edição',
 
-			PROFESSOR: 'Professor',
+			ONTEST: 'Em Teste',
 
-			STUDENT: 'Estudante'
+			PUBLISHED: 'Publicado'
 		};
 
 		this.messages = {
