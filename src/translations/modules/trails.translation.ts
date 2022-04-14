@@ -7,15 +7,9 @@ export class Trails extends Locale {
 		super();
 
 		this.fields = {
-			email: 'E-mail',
+			description: 'Descrição',
 
-			password: 'Senha',
-
-			confirm_password: 'Confirmar Senha',
-
-			new_password: 'Nova Senha',
-
-			confirm_new_password: 'Confirmar Nova Senha',
+			status: 'Status',
 
 			active: 'Ativo',
 
@@ -32,14 +26,6 @@ export class Trails extends Locale {
 
 		this.messages = {
 			welcome: 'Seja bem vindo, {{user_name}}!',
-
-			invalid_email: 'E-mail inválido.',
-
-			invalid_password: 'Senha inválida.',
-
-			password_not_equal: 'As senhas devem ser iguais.',
-
-			update_payload_must_have_diferences: 'Os dados não podem ser os mesmos que os atuais.',
 
 			successfully_created: 'Usuário cadastrado com sucesso!',
 
