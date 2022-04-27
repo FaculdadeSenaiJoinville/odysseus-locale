@@ -11,6 +11,8 @@ export class Trails extends Locale {
 
 			status: 'Status',
 
+			icon: 'Ícone',
+
 			active: 'Ativo',
 
 			type: 'Tipo'
