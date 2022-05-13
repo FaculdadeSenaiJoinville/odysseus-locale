@@ -15,7 +15,9 @@ export class Trails extends Locale {
 
 			active: 'Ativo',
 
-			type: 'Tipo'
+			type: 'Tipo',
+
+			color: 'Cor'
 		};
 
 		this.enums = {
