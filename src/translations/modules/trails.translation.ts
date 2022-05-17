@@ -31,11 +31,11 @@ export class Trails extends Locale {
 		this.messages = {
 			welcome: 'Seja bem vindo, {{user_name}}!',
 
-			successfully_created: 'Usuário cadastrado com sucesso!',
+			successfully_created: 'Trilha cadastrada com sucesso!',
 
 			password_successfully_updated: 'Senha atualizada com sucesso!',
 
-			successfully_updated: 'Dados do usuário atualizados com sucesso!',
+			successfully_updated: 'Dados da trilha atualizados com sucesso!',
 
 			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?',
 			
