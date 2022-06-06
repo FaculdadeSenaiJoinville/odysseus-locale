@@ -43,7 +43,11 @@ export class Trails extends Locale {
 
 			visualize_all_trails: 'Visualizar todas as trilhas',
 
-			must_have_last_name: 'Preencha com o nome completo'
+			must_have_last_name: 'Preencha com o nome completo',
+
+			confirm_test: 'Deseja mesmo enviar a trilha para teste?',
+
+			confirm_publish: 'Deseja mesmo enviar publicar esta trilha?'
 		};
 
 		this.labels = {
