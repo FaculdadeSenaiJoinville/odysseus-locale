@@ -33,6 +33,8 @@ export class Misc {
 			
 			edit: 'Editar',
 
+			ontest: 'Enviar para teste',
+
 			publish: 'Publicar',
 
 			delete: 'Excluir',
