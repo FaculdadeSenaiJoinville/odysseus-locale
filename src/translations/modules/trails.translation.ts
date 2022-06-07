@@ -11,9 +11,13 @@ export class Trails extends Locale {
 
 			status: 'Status',
 
+			icon: 'Ícone',
+
 			active: 'Ativo',
 
-			type: 'Tipo'
+			type: 'Tipo',
+
+			color: 'Cor'
 		};
 
 		this.enums = {
@@ -27,11 +31,11 @@ export class Trails extends Locale {
 		this.messages = {
 			welcome: 'Seja bem vindo, {{user_name}}!',
 
-			successfully_created: 'Usuário cadastrado com sucesso!',
+			successfully_created: 'Trilha cadastrada com sucesso!',
 
 			password_successfully_updated: 'Senha atualizada com sucesso!',
 
-			successfully_updated: 'Dados do usuário atualizados com sucesso!',
+			successfully_updated: 'Dados da trilha atualizados com sucesso!',
 
 			confirm_status_change: 'Deseja mesmo alterar o status do usuário para "{{next_status}}"?',
 			
@@ -39,7 +43,11 @@ export class Trails extends Locale {
 
 			visualize_all_trails: 'Visualizar todas as trilhas',
 
-			must_have_last_name: 'Preencha com o nome completo'
+			must_have_last_name: 'Preencha com o nome completo',
+
+			confirm_test: 'Deseja mesmo enviar a trilha para teste?',
+
+			confirm_publish: 'Deseja mesmo enviar publicar esta trilha?'
 		};
 
 		this.labels = {
