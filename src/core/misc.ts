@@ -49,6 +49,8 @@ export class Misc {
 
 			enter: 'Entrar',
 
+			access: 'Controle de acesso',
+
 			go_back: 'Voltar',
 
 			find: 'Buscar',
@@ -73,7 +75,12 @@ export class Misc {
 
 			remove: 'Remover',
 
-			send: 'Enviar'
+			send: 'Enviar',
+			
+			visualize_all_trails: 'Visualizar todas as trilhas',
+	
+			userTrails: 'Suas trilhas',
+
 		};
 
 		this.messages = {

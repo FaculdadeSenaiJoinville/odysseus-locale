@@ -53,7 +53,9 @@ export class Users extends Locale {
 
 			visualize_all_trails: 'Visualizar todas as trilhas',
 
-			must_have_last_name: 'Preencha com o nome completo'
+			must_have_last_name: 'Preencha com o nome completo',
+
+			userTrails: 'Suas trilhas'
 		};
 
 		this.labels = {

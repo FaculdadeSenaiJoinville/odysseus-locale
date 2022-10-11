@@ -65,7 +65,13 @@ export class Trails extends Locale {
 
 			no_users_associated: 'Nenhum usuário associado',
 
-			assign_user: 'Associar usuário...'
+			assign_user: 'Associar usuário...',
+
+			trails_per_page : 'Trilhas por página',
+
+			assign_trails: 'Associar trilha...',
+
+			no_trails_associated: 'Nenhuma trilha associada'
 		}
 	}
 
